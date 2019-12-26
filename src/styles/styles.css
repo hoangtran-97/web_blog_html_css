@@ -1,0 +1,54 @@
+@import "sidebar.css";
+@import "header.css";
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer {
+    background-color: aqua;
+    grid-area: ft;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1200px 1fr 1fr 50px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "sb"
+    "ft";
+}
+.button {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.body-content {
+    background-color: bisque;
+    grid-area: main;
+    
+}
+.body-sidebar {
+    background-color: blueviolet;
+    grid-area: sb;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: 100px 300px 200px
+}
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 700px 1fr 50px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "main main main main sb sb"
+        "ft ft ft ft ft ft";
+    }
+}
