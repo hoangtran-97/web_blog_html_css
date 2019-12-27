@@ -26,6 +26,35 @@
     border-radius: 10px;
     height: 300px;
 }
+
 #author-image{
     border-radius: 50px;
+}
+@media(min-width:900px) {
+    .post-container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 400px 1fr 1fr 50px;
+        grid-template-areas: 
+        "hi hi hi hi hi hi"
+        "ar ar ar ar au au"
+        "ar ar ar ar ss ss"
+        "pf pf pf pf pf pf";
+    }
+    .post-header-image{
+       grid-area: hi;
+    }
+    .post-article{
+        grid-area: ar;
+    }
+    .post-author{
+        grid-area: au;
+    }
+    .post-social-share{
+        grid-area: ss
+    }
+    #post-footer{
+        grid-area: pf;
+    }
 }
