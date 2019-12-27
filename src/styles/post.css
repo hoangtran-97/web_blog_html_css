@@ -6,6 +6,9 @@
     background-color: #424242;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .post-social-share{
     display: flex;
@@ -29,6 +32,8 @@
 
 #author-image{
     border-radius: 50px;
+    width: 100px;
+    height: 100px;
 }
 @media(min-width:900px) {
     .post-container{
