@@ -1,12 +1,16 @@
+.body-sidebar {
+    grid-area: sb;
+    display: flex;
+    flex-direction: column;
+}
 .sidebar-about{
-    
-    background-color: brown;
+    background-color: #424242;
+    padding: 10px;
+    border-radius: 10px;
 }
-.sidebar-archive{
-    
-    background-color: blue;
-}
-.sidebar-social{
-    
-    background-color: greenyellow;
+.sidebar-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
 }

@@ -1,24 +1,48 @@
 
 .header-image {
-    background-color: aquamarine;
     display: grid;
+    grid-gap: 15px;
     grid-auto-rows: minmax(100px, 400px);
 }
 .header-image-top{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://picsum.photos/1400/400");
+    padding: 20px;
+    color: white;
+    background-color: rgba(68, 62, 62, 0.7) !important;
+    background-blend-mode: color;
+    background-size: cover;
+    border-radius: 10px;
 }
 .header-image-bl{
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+    background-color: #424242;
+    border-radius: 10px;
 }
 .header-image-br{
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+    background-color: #424242;
+    border-radius: 10px;
+}
+.header-image-text-container{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+#header-image-responsive{
+   display: none;
 }
 @media(min-width:900px) {
     .header-image {
-        background-color: aquamarine;
         display: grid;
         grid-area: hd;
         grid-gap: 15px;
@@ -32,15 +56,30 @@
         grid-area: top;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        background-image: url("https://picsum.photos/1400/400");
+        padding: 20px;
+        color: white;
+        background-color: rgba(68, 62, 62, 0.7) !important;
+        background-blend-mode: color;
     }
     .header-image-bl{
         grid-area: bl;
         display: flex;
         justify-content: center;
+        flex-direction: row;
+        background-color: #424242;
     }
     .header-image-br{
         grid-area: br;
         display: flex;
         justify-content: center;
+        flex-direction: row;
+        background-color: #424242;
+    }
+    #header-image-responsive{
+        display: inline-block;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
