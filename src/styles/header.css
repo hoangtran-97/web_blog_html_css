@@ -35,7 +35,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: ccenter;
     font-size: 1.2rem;
 }
 #header-image-responsive{
@@ -76,6 +76,9 @@
         justify-content: center;
         flex-direction: row;
         background-color: #424242;
+    }
+    .header-image-text-container{
+        font-size: 1rem;
     }
     #header-image-responsive{
         display: inline-block;

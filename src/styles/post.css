@@ -1,0 +1,31 @@
+.post-container{
+    display: flex;
+    flex-direction: column;
+}
+.post-author{
+    background-color: #424242;
+    padding: 10px;
+    border-radius: 10px;
+}
+.post-social-share{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+.post-header-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://picsum.photos/1400/400");
+    padding: 20px;
+    color: white;
+    background-color: rgba(68, 62, 62, 0.7) !important;
+    background-blend-mode: color;
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+}
+#author-image{
+    border-radius: 50px;
+}

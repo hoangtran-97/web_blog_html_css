@@ -1,5 +1,6 @@
 @import "sidebar.css";
 @import "header.css";
+@import "post.css";
 body{
     background-color: black;
     padding: 0;
@@ -18,6 +19,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 a {
     text-decoration: none;
@@ -52,6 +54,9 @@ a:visited {
 }
 .body-content {
     grid-area: main; 
+}
+#anchor-home:visited{
+    color: white;
 }
 @media(min-width:900px) {
     body{
